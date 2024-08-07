@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>V&J</title>
+  <style>
+    /* Estilos generales */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      transition: background-color 0.5s ease-in-out; /* Transición suave para cambios de color de fondo */
+    }
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color:pink ;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(to right, #000,#0000,#77DD77, #AEC7CF);
+            /* Cambia los colores y la dirección del degradado */
+            border-radius: 15px;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+        }
+
+  
+
+    /* Estilos del encabezado */
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .header h1 {
+      font-size: 32px;
+      margin: 0;
+      padding: 0;
+      color: black;
+      padding: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .header h2{
+      font-size: 16px;
+      margin: 0;
+      padding: 0;
+      color: Black;
+      box-shadow: 0 4px 3px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Estilos de la galería de imágenes */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .gallery img {
+      width: 100px;
+      height: 150px;
+      margin: 10px;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      position: relative; /* Añadido para el posicionamiento de los corazones */
+    }
+
+    .gallery video {
+      width: 100px;
+      height: 150px;
+      margin: 5px;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Estilos del mensaje */
+    .message {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .message h2 {
+      font-size: 18px;
+      margin: 0;
+      padding: 0;
+      color: purple;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    
+
+    .heart::before,
+    .heart::after {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background-color: maroon;
+      border-radius: 50%;
+    }
+
+    .heart::before {
+      top: -15px;
+      left: 0;
+    }
+
+    .heart::after {
+      top: 0;
+      left: -15px;
+    }
+
+    /* Estilos adicionales */
+    a {
+      text-decoration: none;
+      color: #333;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: maroon;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #191970;
+      color:gold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: darkred;
+    }
+  .marco {
+            border: 1px #FF1492; /* Cambia el color del marco */
+            padding: 2px; /* Espacio entre el borde y la imagen */
+            display: inline-block;
+            border-radius: 10px; /* Bordes redondeados del marco */
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Sombra del marco */
+        }
+  
+  
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Felices dos meses <3 </h1>
+      <h2> otro mes juntos junto a la persona que me hace feliz <3 .</h2>
+      </div>
+    <div class="gallery">
+         <div class="marco">
+      <img src="img/pololos.png" alt="Imagen 1">
+      <img src="img/tilinos.png" alt="Imagen 2">
+           <img src="img/vj.png" alt="imagen 3">
+         </div>
+      <div class="marco"> 
+      <video controls>
+        <source src="img/marry.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+      </video>
+        </div>
+    </div>
+    <div class="message">
+      <h2>Espero que estes bien mi señorita flores de ponce, vengo a decirte que eres la persona mas linda y maravillosa. y aunque no seamos algo serio</h2>
+      <h2>Me encanta tu forma de ser conmigo, me encantan tus ojos tan brillantes como si fueran millones de estrellas</h2>
+      <h2>Tu cabello tan suave como si fuera algodon</h2>
+      <h2> amo tu linda personalidad y....aunque no tiene mucho que paso lo de katia,estoy algo dolido pero quiero seguir para ti </h2>
+      <h2>Te amo muchisimo jamileth y quiero seguir con esta bonita relacion entre tu y yo  <3 </h2>
+      <button onclick="window.location.href='Nota.html';">Sorpresita </button>
+    </div>
+  </div>
+  <script>
+    // Colores de fondo para la animación
+    const colors = ['#800080','pink','skyblue','black','#ff1493'];
+    let index = 0;
+
+    function changeBackgroundColor() {
+      document.body.style.backgroundColor = colors[index];
+      index = (index + 1) % colors.length;
+    }
+
+    // Intervalo para cambiar el color de fondo cada 1 segundo (1000 milisegundos)
+    setInterval(changeBackgroundColor, 2000);
+  </script>
+</body>
+</html>
